@@ -1,2 +1,7 @@
-This project is intended to help create an environment that recreates a potential bug or demonstrates a question about Morphia.  It is 
-intended to be cloned, shared, and discarded once the issue or question is resolved.
+# Repro for Indexing of Nested Object
+
+Given a nested object structure MyEntity containing Child entity.
+When the Child entity has an indexed field.
+Then the Child index is not created in parent MyEntity.
+
+In 1.3 version, nested indexes were created. 
